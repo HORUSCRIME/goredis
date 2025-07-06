@@ -30,11 +30,10 @@ This GoRedis implementation currently supports:
 
 - **Basic Commands:** PING, ECHO  
 
-- **Persistence:**  
+- **Persistence:**
+   -  **Append-Only File (AOF):** Commands that modify the database are appended to appendonly.aof.  
 
- - **Append-Only File (AOF):** Commands that modify the database are appended to appendonly.aof.  
-
- - **AOF Loading:** Upon server startup, the appendonly.aof file is replayed to restore the database state.  
+   - **AOF Loading:** Upon server startup, the appendonly.aof file is replayed to restore the database state.  
 
 - **Networking:** Simple TCP server listening on 0.0.0.0:6379 (IPv4).  
 
