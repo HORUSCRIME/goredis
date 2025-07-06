@@ -2,14 +2,14 @@
 A simplified Redis-like server implemented in Go, focusing on core data structures and persistence mechanisms. This project serves as a learning exercise to understand the internals of a key-value store and the Redis Serialization Protocol (RESP).
 
 **Table of Contents**
--Features
--Project Structure
--Getting Started
--Prerequisites
--Setup
--Running the Server
--Testing with redis-cli
--Future Enhancements
+- Features
+- Project Structure
+- Getting Started
+- Prerequisites
+- Setup
+- Running the Server
+- Testing with redis-cli
+- Future Enhancements
 
 
 **Features**
