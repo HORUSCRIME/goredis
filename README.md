@@ -28,7 +28,7 @@ This GoRedis implementation currently supports:
 
 **Sorted Sets:** ZADD, ZSCORE, ZREM, ZCARD  
 
-**Basic Commands: **PING, ECHO  
+**Basic Commands:** PING, ECHO  
 
 **Persistence:**  
 
@@ -36,7 +36,7 @@ This GoRedis implementation currently supports:
 
 **AOF Loading:** Upon server startup, the appendonly.aof file is replayed to restore the database state.  
 
-**Networking: **Simple TCP server listening on 0.0.0.0:6379 (IPv4).  
+**Networking:** Simple TCP server listening on 0.0.0.0:6379 (IPv4).  
 
 
 
