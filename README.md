@@ -39,7 +39,7 @@ This GoRedis implementation currently supports:
 **Networking:** Simple TCP server listening on 0.0.0.0:6379 (IPv4).  
 
 
-<pre> ```## Project Structure
+<pre> ## Project Structure
 
 goredis/
 ├── main.go               # Main entry point, server initialization, AOF setup, graceful shutdown.
@@ -68,28 +68,34 @@ goredis/
 ├── utils/
 │   └── utils.go          # Utility functions (e.g., panic recovery).
 └── go.mod                # Go module definition and dependencies.
-```</pre>
+</pre>
 
 
 
-**Getting Started**
-**Prerequisites**
+## Getting Started
+### Prerequisites**
 
-**Go Language:** Ensure Go is installed on your system (version 1.22 or higher recommended). Download from golang.org/dl.
-**redis-cli (Optional, but Recommended):** The official Redis command-line interface is invaluable for testing.
-Windows: Download the Redis Stack Windows Installer and ensure "Add Redis to the PATH environment variable" is checked during installation.
-macOS/Linux: Install via your system's package manager (e.g., brew install redis on macOS, sudo apt-get install redis-tools on Ubuntu).
+**Go Language:** Ensure Go is installed on your system (version 1.22 or higher recommended). Download from golang.org/dl.  
 
-**Setup**
-Clone the Repository (or create the structure):
+**redis-cli (Optional, but Recommended):** The official Redis command-line interface is invaluable for testing.  
+
+-Windows: Download the Redis Stack Windows Installer and ensure "Add Redis to the PATH environment variable" is checked during installation.
+-macOS/Linux: Install via your system's package manager (e.g., brew install redis on macOS, sudo apt-get install redis-tools on Ubuntu).
+
+### Setup
+- Clone the Repository (or create the structure):
 If you're starting from scratch, ensure your project structure matches the one above. If you're using a Git repository, clone it:
-git clone https://github.com/your-username/goredis.git
-cd goredis
+<pre>
+ git clone https://github.com/your-username/goredis.git
+ cd goredis
+</pre>
+
 
 (Replace https://github.com/your-username/goredis.git with your actual repository URL if applicable, or just navigate to your existing project directory).
-Initialize Go Module Dependencies:
+
+- Initialize Go Module Dependencies:
 Run go mod tidy in the project root to download and manage dependencies.
-go mod tidy
+<pre>go mod tidy</pre>
 
 
 **Running the Server**
@@ -128,7 +134,8 @@ Now, go back to the server terminal (Ctrl+C to stop it). Then restart it (go run
 "Hello GoRedis!"
 127.0.0.1:6379> GET anotherkey # This should still be there if less than 10 seconds passed since first SET
 "This will persist"
-
+</pre>
+<pre>
 Lists:
 127.0.0.1:6379> LPUSH mylist apple banana cherry
 (integer) 3
@@ -138,7 +145,8 @@ Lists:
 (integer) 4
 127.0.0.1:6379> LLEN mylist
 (integer) 3
-
+</pre>
+<pre>
 Hashes:
 127.0.0.1:6379> HSET myuser name "Alice" email "alice@example.com"
 (integer) 2
@@ -148,7 +156,8 @@ Hashes:
 (integer) 1
 127.0.0.1:6379> HLEN myuser
 (integer) 1
-
+</pre>
+<pre>
 Sets:
 127.0.0.1:6379> SADD mysports football basketball tennis
 (integer) 3
@@ -158,7 +167,8 @@ Sets:
 (integer) 3
 127.0.0.1:6379> SREM mysports tennis
 (integer) 1
-
+</pre>
+<pre>
 Sorted Sets:
 127.0.0.1:6379> ZADD myleaderboard 100 "PlayerA" 50 "PlayerB" 120 "PlayerC"
 (integer) 3
@@ -168,7 +178,8 @@ Sorted Sets:
 (integer) 3
 127.0.0.1:6379> ZREM myleaderboard "PlayerB"
 (integer) 1
-
+</pre>
+<pre>
 
 Exit redis-cli:
 127.0.0.1:6379> QUIT
