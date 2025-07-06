@@ -178,27 +178,27 @@ Stop the GoRedis server: Go back to the terminal running go run main.go and pres
 
 
 
-**Future Enhancements**
+## Future Enhancements
 
-This project is a solid foundation. Here are some key areas for future development to make it more like a full-fledged Redis:
+This project is a solid foundation. Here are some key areas for future development to make it more like a full-fledged Redis:  
 
-AOF Rewrite (BGREWRITEAOF): Implement the logic to optimize the AOF file by rewriting it in the background, removing redundant commands.
+- AOF Rewrite (BGREWRITEAOF): Implement the logic to optimize the AOF file by rewriting it in the background, removing redundant commands.
 
-RDB Snapshotting: Add support for saving and loading binary RDB snapshots of the database.
+- RDB Snapshotting: Add support for saving and loading binary RDB snapshots of the database.
 
-Comprehensive Command Set: Implement more commands for each data type (e.g., LRANGE, HGETALL, SMEMBERS, ZRANGE).
+- Comprehensive Command Set: Implement more commands for each data type (e.g., LRANGE, HGETALL, SMEMBERS, ZRANGE).
 
-Transactions (MULTI/EXEC/DISCARD/WATCH): Fully implement Redis transactions with optimistic locking.
+- Transactions (MULTI/EXEC/DISCARD/WATCH): Fully implement Redis transactions with optimistic locking.
 
-Publish/Subscribe (Pub/Sub): Add PUBLISH, SUBSCRIBE, PSUBSCRIBE for real-time messaging.
+- Publish/Subscribe (Pub/Sub): Add PUBLISH, SUBSCRIBE, PSUBSCRIBE for real-time messaging.
 
-Advanced TTL Management: Implement background key eviction for expired keys more efficiently.
+- Advanced TTL Management: Implement background key eviction for expired keys more efficiently.
 
-Authentication (AUTH): Add a simple password-based authentication mechanism.
+- Authentication (AUTH): Add a simple password-based authentication mechanism.
 
-Error Handling & Robustness: Enhance error handling, especially for network issues and malformed commands.
+- Error Handling & Robustness: Enhance error handling, especially for network issues and malformed commands.
 
-Performance Optimizations: Explore more performant data structures (e.g., skip lists for sorted sets, specialized list implementations).
+- Performance Optimizations: Explore more performant data structures (e.g., skip lists for sorted sets, specialized list implementations).
 
-Metrics & Monitoring (INFO): Provide server statistics and information.
+- Metrics & Monitoring (INFO): Provide server statistics and information.
 
