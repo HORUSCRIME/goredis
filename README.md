@@ -1,4 +1,4 @@
-#GOREDIS  
+# GOREDIS  
 
 A simplified Redis-like server implemented in Go, focusing on core data structures and persistence mechanisms. This project serves as a learning exercise to understand the internals of a key-value store and the Redis Serialization Protocol (RESP).  
 
