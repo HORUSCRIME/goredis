@@ -93,6 +93,7 @@ go mod tidy
 
 
 **Running the Server**
+<pre>```
 Start the GoRedis server:
 Open your terminal or command prompt in the goredis project root and run:
 go run main.go
@@ -172,7 +173,7 @@ Exit redis-cli:
 127.0.0.1:6379> QUIT
 
 
-Stop the GoRedis server: Go back to the terminal running go run main.go and press Ctrl+C.
+Stop the GoRedis server: Go back to the terminal running go run main.go and press Ctrl+C.```<\pre>
 
 
 
