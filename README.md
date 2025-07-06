@@ -73,7 +73,7 @@ goredis/
 
 
 ## Getting Started
-### Prerequisites**
+### Prerequisites
 
 **Go Language:** Ensure Go is installed on your system (version 1.22 or higher recommended). Download from golang.org/dl.  
 
