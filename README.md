@@ -173,7 +173,8 @@ Exit redis-cli:
 127.0.0.1:6379> QUIT
 
 
-Stop the GoRedis server: Go back to the terminal running go run main.go and press Ctrl+C.```<\pre>
+Stop the GoRedis server: Go back to the terminal running go run main.go and press Ctrl+C.
+ ```<\pre>
 
 
 
