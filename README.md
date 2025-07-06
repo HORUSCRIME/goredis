@@ -39,7 +39,7 @@ This GoRedis implementation currently supports:
 **Networking:** Simple TCP server listening on 0.0.0.0:6379 (IPv4).  
 
 
-
+<prev>
 
 ## Project Structure
 
@@ -70,7 +70,7 @@ goredis/
 ├── utils/
 │   └── utils.go          # Utility functions (e.g., panic recovery).
 └── go.mod                # Go module definition and dependencies.
-
+</prev>
 
 
 
