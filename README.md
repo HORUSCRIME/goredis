@@ -3,7 +3,7 @@
 A simplified Redis-like server implemented in Go, focusing on core data structures and persistence mechanisms. This project serves as a learning exercise to understand the internals of a key-value store and the Redis Serialization Protocol (RESP).  
 
 
-**Table of Contents**
+## Table of Contents
 - Features
 - Project Structure
 - Getting Started
@@ -14,24 +14,34 @@ A simplified Redis-like server implemented in Go, focusing on core data structur
 - Future Enhancements
 
 
-**Features**
-This GoRedis implementation currently supports:
+## Features
+This GoRedis implementation currently supports:  
 
-**Core Data Structures:**
-**Strings:** SET, GET, DEL, EXISTS, TYPE
-**Lists:** LPUSH, RPUSH, LPOP, RPOP, LLEN
-**Hashes:** HSET, HGET, HDEL, HLEN
-**Sets:** SADD, SREM, SISMEMBER, SCARD
-**Sorted Sets:** ZADD, ZSCORE, ZREM, ZCARD
-**Basic Commands: **PING, ECHO
-**Persistence:**
-**Append-Only File (AOF):** Commands that modify the database are appended to appendonly.aof.
-**AOF Loading:** Upon server startup, the appendonly.aof file is replayed to restore the database state.
-**Networking: **Simple TCP server listening on 0.0.0.0:6379 (IPv4).
+ ### Core Data Structures:
+**Strings:** SET, GET, DEL, EXISTS, TYPE  
+
+**Lists:** LPUSH, RPUSH, LPOP, RPOP, LLEN  
+
+**Hashes:** HSET, HGET, HDEL, HLEN  
+
+**Sets:** SADD, SREM, SISMEMBER, SCARD  
+
+**Sorted Sets:** ZADD, ZSCORE, ZREM, ZCARD  
+
+**Basic Commands: **PING, ECHO  
+
+**Persistence:**  
+
+**Append-Only File (AOF):** Commands that modify the database are appended to appendonly.aof.  
+
+**AOF Loading:** Upon server startup, the appendonly.aof file is replayed to restore the database state.  
+
+**Networking: **Simple TCP server listening on 0.0.0.0:6379 (IPv4).  
 
 
 
-**Project Structure**
+
+## Project Structure
 
 goredis/
 ├── main.go               # Main entry point, server initialization, AOF setup, graceful shutdown.
