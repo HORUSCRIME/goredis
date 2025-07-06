@@ -18,28 +18,28 @@ A simplified Redis-like server implemented in Go, focusing on core data structur
 This GoRedis implementation currently supports:  
 
  ### Core Data Structures:
-**Strings:** SET, GET, DEL, EXISTS, TYPE  
+- **Strings:** SET, GET, DEL, EXISTS, TYPE  
 
-**Lists:** LPUSH, RPUSH, LPOP, RPOP, LLEN  
+- **Lists:** LPUSH, RPUSH, LPOP, RPOP, LLEN  
 
-**Hashes:** HSET, HGET, HDEL, HLEN  
+- **Hashes:** HSET, HGET, HDEL, HLEN  
 
-**Sets:** SADD, SREM, SISMEMBER, SCARD  
+- **Sets:** SADD, SREM, SISMEMBER, SCARD  
 
-**Sorted Sets:** ZADD, ZSCORE, ZREM, ZCARD  
+- **Sorted Sets:** ZADD, ZSCORE, ZREM, ZCARD  
 
-**Basic Commands:** PING, ECHO  
+- **Basic Commands:** PING, ECHO  
 
-**Persistence:**  
+- **Persistence:**  
 
-**Append-Only File (AOF):** Commands that modify the database are appended to appendonly.aof.  
+ - **Append-Only File (AOF):** Commands that modify the database are appended to appendonly.aof.  
 
-**AOF Loading:** Upon server startup, the appendonly.aof file is replayed to restore the database state.  
+ - **AOF Loading:** Upon server startup, the appendonly.aof file is replayed to restore the database state.  
 
-**Networking:** Simple TCP server listening on 0.0.0.0:6379 (IPv4).  
+- **Networking:** Simple TCP server listening on 0.0.0.0:6379 (IPv4).  
 
-
-<pre> ## Project Structure
+## Project Structure
+<pre> 
 
 goredis/
 ├── main.go               # Main entry point, server initialization, AOF setup, graceful shutdown.
@@ -79,8 +79,8 @@ goredis/
 
 **redis-cli (Optional, but Recommended):** The official Redis command-line interface is invaluable for testing.  
 
--Windows: Download the Redis Stack Windows Installer and ensure "Add Redis to the PATH environment variable" is checked during installation.
--macOS/Linux: Install via your system's package manager (e.g., brew install redis on macOS, sudo apt-get install redis-tools on Ubuntu).
+- Windows: Download the Redis Stack Windows Installer and ensure "Add Redis to the PATH environment variable" is checked during installation.
+- macOS/Linux: Install via your system's package manager (e.g., brew install redis on macOS, sudo apt-get install redis-tools on Ubuntu).
 
 ### Setup
 - Clone the Repository (or create the structure):
