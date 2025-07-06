@@ -99,9 +99,8 @@ Run go mod tidy in the project root to download and manage dependencies.
 
 
 **Running the Server**
-
+**Start the GoRedis server:**
 <pre>
-Start the GoRedis server:
 Open your terminal or command prompt in the goredis project root and run:
 go run main.go
 
@@ -135,8 +134,9 @@ Now, go back to the server terminal (Ctrl+C to stop it). Then restart it (go run
 127.0.0.1:6379> GET anotherkey # This should still be there if less than 10 seconds passed since first SET
 "This will persist"
 </pre>
+
+### Lists:
 <pre>
-Lists:
 127.0.0.1:6379> LPUSH mylist apple banana cherry
 (integer) 3
 127.0.0.1:6379> LPOP mylist
@@ -146,8 +146,9 @@ Lists:
 127.0.0.1:6379> LLEN mylist
 (integer) 3
 </pre>
+
+### Hashes:
 <pre>
-Hashes:
 127.0.0.1:6379> HSET myuser name "Alice" email "alice@example.com"
 (integer) 2
 127.0.0.1:6379> HGET myuser name
@@ -157,8 +158,9 @@ Hashes:
 127.0.0.1:6379> HLEN myuser
 (integer) 1
 </pre>
+
+### Sets:
 <pre>
-Sets:
 127.0.0.1:6379> SADD mysports football basketball tennis
 (integer) 3
 127.0.0.1:6379> SISMEMBER mysports basketball
@@ -168,8 +170,9 @@ Sets:
 127.0.0.1:6379> SREM mysports tennis
 (integer) 1
 </pre>
+
+### Sorted Sets:
 <pre>
-Sorted Sets:
 127.0.0.1:6379> ZADD myleaderboard 100 "PlayerA" 50 "PlayerB" 120 "PlayerC"
 (integer) 3
 127.0.0.1:6379> ZSCORE myleaderboard "PlayerA"
@@ -179,9 +182,9 @@ Sorted Sets:
 127.0.0.1:6379> ZREM myleaderboard "PlayerB"
 (integer) 1
 </pre>
+### Exit redis-cli:
 <pre>
 
-Exit redis-cli:
 127.0.0.1:6379> QUIT
 
 
