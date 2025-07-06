@@ -40,7 +40,7 @@ This GoRedis implementation currently supports:
 
 
 <prev>
-
+```
 ## Project Structure
 
 goredis/
@@ -70,7 +70,7 @@ goredis/
 ├── utils/
 │   └── utils.go          # Utility functions (e.g., panic recovery).
 └── go.mod                # Go module definition and dependencies.
-</prev>
+```</prev>
 
 
 
